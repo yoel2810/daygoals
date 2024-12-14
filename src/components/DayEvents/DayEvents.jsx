@@ -51,7 +51,7 @@ const DayEvents = () => {
         <Stack sx={classes.noEventsContainer}>
           <img
             style={classes.calendarImage}
-            src="/calendar.svg"
+            src={`${import.meta.env.BASE_URL}images/calendar.svg`}
             alt="calendar"
           />
           <Typography sx={classes.noEventsText} variant="body1">
