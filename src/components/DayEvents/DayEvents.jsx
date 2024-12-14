@@ -6,6 +6,7 @@ import { prettifyDate } from "../../utils/dateUtils";
 import AddEventButton from "./AddEventButton/AddEventButton";
 import { getEventsOfTheDay } from "../../utils/eventsUtils";
 import EventCard from "./EventCard/EventCard";
+import calendarImage from "/calendar.svg";
 
 const DayEvents = () => {
   const { pickedDate } = useContext(CalendarContext);
@@ -51,7 +52,7 @@ const DayEvents = () => {
         <Stack sx={classes.noEventsContainer}>
           <img
             style={classes.calendarImage}
-            src={`${import.meta.env.BASE_URL}images/calendar.svg`}
+            src={calendarImage}
             alt="calendar"
           />
           <Typography sx={classes.noEventsText} variant="body1">
